@@ -2,11 +2,12 @@
 
 SpeerCheck is an internal tool for recruiters at Speer to schedule interviews with candidates based on the availability of team members. The application provides a clean, intuitive interface for managing the interview scheduling process.
 
-![SpeerCheck Screenshot](https://placeholder.svg?height=400&width=800)
+![SpeerCheck Screenshot](/public/image.png)
 
 ## Features
 
 ### Core Functionality
+
 - **Candidate Selection**: Choose from a dropdown of candidates
 - **Weekly Calendar View**: Display availability for Monday-Friday, 9 AM-6 PM in 30-minute slots
 - **Availability Visualization**: Clearly see overlapping availability between candidates and engineers
@@ -14,6 +15,7 @@ SpeerCheck is an internal tool for recruiters at Speer to schedule interviews wi
 - **Confirmation System**: Review and confirm interview details before finalizing
 
 ### Advanced Features
+
 - **Engineer Filtering**: Filter the calendar view by specific engineers
 - **Interview Duration**: Select between 15, 30, or 60-minute interview slots
 - **Slot Locking**: Scheduled interview slots are locked to prevent double-booking
@@ -22,30 +24,25 @@ SpeerCheck is an internal tool for recruiters at Speer to schedule interviews wi
 ## Installation
 
 1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/your-username/speercheck.git
-cd speercheck
-\`\`\`
+
+   ```bash
+   git clone https://github.com/your-username/speercheck.git
+   cd speercheck
+   ```
 
 2. Install dependencies:
-\`\`\`bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-\`\`\`
+
+   ```bash
+   npm install
+   ```
 
 3. Run the development server:
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-\`\`\`
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+   ```bash
+   npm run dev
+   ```
+
+4. Open [https://tryspeercheck.vercel.app](https://tryspeercheck.vercel.app) in your browser to see the application.
 
 ## Usage Guide
 
@@ -68,35 +65,31 @@ pnpm dev
 
 ## Project Structure
 
-\`\`\`
+```
 speercheck/
-├── app/                  # Next.js app directory
-├── components/           # React components
-│   ├── interview-scheduler.tsx    # Main scheduler component
-│   ├── candidate-selector.tsx     # Candidate dropdown
-│   ├── weekly-calendar.tsx        # Calendar view
-│   ├── engineer-filter.tsx        # Engineer filter
-│   └── schedule-confirmation.tsx  # Confirmation dialog
-├── lib/                  # Utility functions and data
-│   ├── types.ts                   # TypeScript type definitions
-│   ├── data.ts                    # Mock data for candidates and engineers
-│   ├── date-utils.ts              # Date formatting utilities
-│   └── availability-utils.ts      # Availability calculation logic
-└── __tests__/            # Test files
-    └── availability-utils.test.tsx # Tests for availability logic
-\`\`\`
+├── app/                      # Next.js app directory
+├── components/               # React components
+│   ├── interview-scheduler.tsx       # Main scheduler component
+│   ├── candidate-selector.tsx       # Candidate dropdown
+│   ├── weekly-calendar.tsx          # Calendar view
+│   ├── engineer-filter.tsx          # Engineer filter
+│   └── schedule-confirmation.tsx    # Confirmation dialog
+├── lib/                      # Utility functions and data
+│   ├── types.ts                      # TypeScript type definitions
+│   ├── data.ts                       # Mock data for candidates and engineers
+│   ├── date-utils.ts                # Date formatting utilities
+│   └── availability-utils.ts        # Availability calculation logic
+└── tests/                   # Test files
+    └── availability-utils.test.tsx  # Tests for availability logic
+```
 
 ## Testing
 
 The project includes unit tests for the core availability calculation logic. To run the tests:
 
-\`\`\`bash
+```bash
 npm run test
-# or
-yarn test
-# or
-pnpm test
-\`\`\`
+```
 
 ## Future Enhancements
 
@@ -105,11 +98,3 @@ pnpm test
 - **Calendar Export**: Add ability to export scheduled interviews to calendar apps
 - **Email Notifications**: Send automated notifications to candidates and engineers
 - **Dark Mode**: Implement theme switching for better user experience
-
-## License
-
-[MIT](LICENSE)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
